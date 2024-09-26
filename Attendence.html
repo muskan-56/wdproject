@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management</title>
+    <link rel="stylesheet" href="Attendence.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Attendance Management</h2>
+        
+        <form id="attendance-form" onsubmit="markAttendance(event)" class="form-section">
+            <h3>Mark Attendance</h3>
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" name="studentId" placeholder="Enter Student ID" required>
+
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course" placeholder="Enter Course Name" required>
+
+            <label for="attendanceDate">Date:</label>
+            <input type="date" id="attendanceDate" name="attendanceDate" required>
+
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+
+            <input type="submit" value="Mark Attendance">
+        </form>
+
+        <h3>Attendance Records</h3>
+        <table id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Course</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Attendance records will be added dynamically here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="Attendance.js"></script>
+</body>
+</html>

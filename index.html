@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="pj4.webp" class="logo" alt="Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="Edit_Profile.html">Update_Profile</a></li>
+                <li><a href="Register.html">Registration</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="hero">
+        <div class="fade-slider">
+            <div class="fade-slide fade"></div>
+                <img src="pj5.webp" alt="Slide 1">
+                <div class="caption">
+                    <h2>Track Attendance Effortlessly</h2>
+                    <p>Attendance management at your fingertips</p>
+                </div>
+            </div>
+            <div class="fade-slide fade active">
+                <img src="pj.jpg" alt="Slide 2" >
+                <div class="caption">
+                    <h2>Manage Students Easily</h2>
+                    <p>Your complete school management solution</p>
+                </div>
+            </div>
+            <div class="fade-slide fade">
+                <img src="p11.webp" alt="Slide 3">
+                <div class="caption">
+                    <h2>Effectiveness</h2>
+                    <p> Empower the remarkable Things </p>
+                </div>
+            </div>
+            <div class="fade-slide fade">
+                <img src="pj9.jpg" alt="Slide 4">
+                <div class="caption">
+                    <h2>Work effectively</h2>
+                    <p>Handle overall  Tasks </p>
+                </div>
+            </div>
+            <div class="fade-slide fade">
+                <img src="b3.avif" alt="Slide 5">
+                <div class="caption">
+                    <h2>Organize Courses and Classes</h2>
+                    <p>Course and class management made easy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-contact">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>We are a dedicated team providing modern and efficient student management solutions, aiming to improve the academic experience for both students and administrators. With a focus on innovation, our system simplifies grade tracking, class scheduling, attendance monitoring, and much more.</p>
+                <p>Our mission is to empower institutions to manage student data effectively, save time, and ensure a seamless educational environment. From small schools to large universities, our platform caters to all your needs.</p>
+                <button class="learn-more-btn"><a href="learn_More.html">Learn More</a></button>
+            </div>
+            <!-- <div class="about-image">
+                <img src="PJ3.jpg" alt="About Us Image">
+            </div> -->
+        </div>
+    
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, suggestions, or concerns, feel free to reach out to us using the form below.</p>
+    
+            <form id="contact-form" onsubmit="sendMessage(event)">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+    
+                <input type="submit" value="Send Message">
+            </form>
+            <div id="contact-message"></div>
+        </div>
+    </section>
+    
+    <div class="about-table">
+        <h1><b><i>Our Key Facilities</i></b></u></h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fas fa-chalkboard-teacher"></i> <a href="Grade.html">Grade Management</a></td>
+                    <td>Track and manage student grades efficiently.</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-user-check"></i> <a href="Attendence.html">Attendance Tracking</a></td>
+                    <td>Monitor attendance in real-time.</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-calendar-alt"></i> <a href="Course_management.html">Course & Class_management</a></td>
+                    <td>Create and manage course schedules with ease.</td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-dollar-sign"></i> <a href="Fees.html">Fees Management</a></td>
+                    <td>Manage student fees and payments in one place.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</section>
+    
+    <!-- Footer -->
+    <footer>
+        <table width="100%" cellpadding="20" bgcolor="#336699">
+            <tr>
+                <td align="center">
+                    <font size="4">
+                        <b>2024 All Rights Reserved </b>
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+    <script src="js1.js"></script>
+</body>
+</html>

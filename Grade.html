@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade and Examination Management</title>
+    <link rel="stylesheet" href="grade.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Grade and Examination Management</h2>
+        
+        <form id="grade-form" onsubmit="addGrade(event)" class="form-section">
+            <h3>Add New Grade</h3>
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" name="studentId" placeholder="Enter Student ID" required>
+
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course" placeholder="Enter Course Name" required>
+
+            <label for="examDate">Exam Date:</label>
+            <input type="date" id="examDate" name="examDate" required>
+
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" name="grade" placeholder="Enter Grade" required>
+
+            <input type="submit" value="Add Grade" class="btn">
+        </form>
+
+        <h3>Grade Records</h3>
+        <table id="gradeTable">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Course</th>
+                    <th>Exam Date</th>
+                    <th>Grade</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Grade records will be added dynamically here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="Grade.js"></script>
+</body>
+</html>

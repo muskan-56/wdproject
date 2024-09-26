@@ -1,0 +1,51 @@
+<a href="#" class="forgot-password" onclick="openModal()">Forgot Password?</a>
+
+<!-- Modal Structure -->
+<div id="passwordModal" style="display:none;">
+    <div class="modal-content">
+        <h3>Reset Your Password</h3>
+        <label for="recovery-email">Enter your email address:</label>
+        <input type="email" id="recovery-email" placeholder="Enter your email">
+        <button onclick="sendRecoveryEmail()">Send Reset Link</button>
+    </div>
+</div>
+
+<script>
+    // Function to display the modal
+    function openModal() {
+        document.getElementById("passwordModal").style.display = "block";
+    }
+
+    // Function to "send" the recovery email (this is just a placeholder for real functionality)
+    function sendRecoveryEmail() {
+        var email = document.getElementById("recovery-email").value;
+        if (email) {
+            alert("A password reset link has been sent to " + email);
+            document.getElementById("passwordModal").style.display = "none";
+        } else {
+            alert("Please enter a valid email.");
+        }
+    }
+</script>
+
+<!-- Optional CSS for the modal -->
+<style>
+    .modal-content {
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        margin: auto;
+        text-align: center;
+    }
+
+    #passwordModal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+    }
+</style>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees Management</title>
+    <link rel="stylesheet" href="fee.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Fees Management</h2>
+        
+        <form id="fees-form" onsubmit="addFees(event)" class="form-section">
+            <h3>Add New Fees</h3>
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" name="studentId" placeholder="Enter Student ID" required>
+
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course" placeholder="Enter Course Name" required>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter Fee Amount" required>
+
+            <label for="dueDate">Due Date:</label>
+            <input type="date" id="dueDate" name="dueDate" required>
+
+            <input type="submit" value="Add Fees">
+        </form>
+
+        <h3>Manage Fees</h3>
+        <table id="feesTable">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Course</th>
+                    <th>Amount</th>
+                    <th>Due Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="fee.js"></script>
+</body>
+</html>
